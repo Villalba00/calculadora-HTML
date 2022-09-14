@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/calc.png"/>
+    <title>Calculadora</title>
+    <!--carregando a fonte do google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Orbitron&display=swap" rel="stylesheet">
+    <!--carregando o css-->
+    <link rel = "stylesheet" href="css/estilo.css" />
+
+</head>
+<body>
+    <div id = "calculadora">
+        <h3> Calculadora Fatec</h3>
+        <input type="text" id="resultado" disabled />
+        <div id="containerbotao">
+            <button id="um" onclick="calcular('1')" >1</button>
+            <button id="dois" onclick="calcular('2')" >2</button> 
+            <button id="tres" onclick="calcular('3')" >3</button>
+            <button id="multiplicar" onclick="calcular('*')" >*</button>
+            <button id="limpar" onclick="limpar()">c</button>
+            <button id="quatro" onclick="calcular('4')" >4</button>
+            <button id="cinco" onclick="calcular('5')" >5</button>
+            <button id="seis" onclick="calcular('6')" >6</button>
+            <button id="dividir" onclick="calcular('/')" >/</button>
+            <button id="apagar" onclick="apagar()">&larr;</button>
+            <button id="sete" onclick="calcular('7')" >7</button>
+            <button id="oito" onclick="calcular('8')" >8</button>
+            <button id="nove" onclick="calcular('9')" >9</button>
+            <button id="somar" onclick="calcular('+')" >+</button>
+            <button id="igual" onclick="resultadofinal()">=</button>
+            <button id="zero" onclick="calcular('0')" >0</button>
+            <button id="ponto" onclick="calcular('.')" >.</button>
+            <button id="doiszero" onclick="calcular('00')" >00</button>
+            <button id="subtrair"onclick="calcular('-')" >-</button>
+
+        </div>
+
+    </div>
+    
+</body>
+<script src="js/script.js"></script>
+</html>
